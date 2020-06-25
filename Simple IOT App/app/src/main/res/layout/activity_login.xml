@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <ImageView
+        android:contentDescription="@android:string/copy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"/>
+    <EditText
+
+        android:inputType="textEmailAddress"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rbutton"
+        android:id="@+id/Lemail"
+        android:layout_marginTop="200dp"
+        android:hint="@string/email"
+        android:drawableStart="@drawable/ic_markunread_black_24dp"
+        android:drawableLeft="@drawable/ic_markunread_black_24dp"
+        android:singleLine="true"
+        android:maxLines="1"/>
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rbutton"
+        android:layout_marginTop="25dp"
+        android:id="@+id/Lpassword"
+        android:layout_below="@+id/Lemail"
+        android:hint="@string/password"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:singleLine="true"
+        android:maxLines="1"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rbutton"
+        android:layout_marginTop="25dp"
+        android:id="@+id/Login"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_below="@+id/Lpassword"
+        android:singleLine="true"
+        android:maxLines="1"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/LtextView"
+        android:textAlignment="viewEnd"
+        android:layout_below="@+id/Login"
+        android:text="@string/don_t_have_a_account"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="end" />
+
+
+
+
+</RelativeLayout>
